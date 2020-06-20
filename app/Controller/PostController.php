@@ -31,10 +31,10 @@
 			try {
 				Comentario::inserir($_POST);
 
-				header('Location: http://localhost/PROJS/VIDEO_AULAS/SERIE/02_PHP+MVC+CRUD/?pagina=post&id='.$_POST['id']);
+				header('Location: http://localhost:9000/site-php-mvc-crud/?pagina=post&id='.$_POST['id']);
 			} catch (Exception $e) {
 				echo '<script>alert("'.$e->getMessage().'");</script>';
-				echo '<script>location.href="http://localhost/PROJS/VIDEO_AULAS/SERIE/02_PHP+MVC+CRUD/?pagina=post&id='.$_POST['id'].'"</script>';
+				echo '<script>location.href="http://localhost:9000/site-php-mvc-crud/?pagina=post&id='.$_POST['id'].'"</script>';
 			}
 			
 		}

@@ -35,10 +35,10 @@
 				Postagem::insert($_POST);
 
 				echo '<script>alert("Publicação inserida com sucesso!");</script>';
-				echo '<script>location.href="http://localhost/PROJS/VIDEO_AULAS/SERIE/02_PHP+MVC+CRUD/?pagina=admin&metodo=index"</script>';
+				echo '<script>location.href="http://localhost:9000/site-php-mvc-crud/?pagina=admin&metodo=index"</script>';
 			} catch(Exception $e) {
 				echo '<script>alert("'.$e->getMessage().'");</script>';
-				echo '<script>location.href="http://localhost/PROJS/VIDEO_AULAS/SERIE/02_PHP+MVC+CRUD/?pagina=admin&metodo=create"</script>';
+				echo '<script>location.href="http://localhost:9000/site-php-mvc-crud/?pagina=admin&metodo=create"</script>';
 			}
 			
 		}
@@ -66,10 +66,10 @@
 				Postagem::update($_POST);
 
 				echo '<script>alert("Publicação alterada com sucesso!");</script>';
-				echo '<script>location.href="http://localhost/PROJS/VIDEO_AULAS/SERIE/02_PHP+MVC+CRUD/?pagina=admin&metodo=index"</script>';
+				echo '<script>location.href="http://localhost:9000/site-php-mvc-crud/?pagina=admin&metodo=index"</script>';
 			} catch (Exception $e) {
 				echo '<script>alert("'.$e->getMessage().'");</script>';
-				echo '<script>location.href="http://localhost/PROJS/VIDEO_AULAS/SERIE/02_PHP+MVC+CRUD/?pagina=admin&metodo=change&id='.$_POST['id'].'"</script>';
+				echo '<script>location.href="http://localhost:9000/site-php-mvc-crud/?pagina=admin&metodo=change&id='.$_POST['id'].'"</script>';
 			}
 		}
 
@@ -79,10 +79,10 @@
 				Postagem::delete($paramId);
 
 				echo '<script>alert("Publicação deletada com sucesso!");</script>';
-				echo '<script>location.href="http://localhost/PROJS/VIDEO_AULAS/SERIE/02_PHP+MVC+CRUD/?pagina=admin&metodo=index"</script>';
+				echo '<script>location.href="http://localhost:9000/site-php-mvc-crud/?pagina=admin&metodo=index"</script>';
 			} catch (Exception $e) {
 				echo '<script>alert("'.$e->getMessage().'");</script>';
-				echo '<script>location.href="http://localhost/PROJS/VIDEO_AULAS/SERIE/02_PHP+MVC+CRUD/?pagina=admin&metodo=index"</script>';
+				echo '<script>location.href="http://localhost:9000/site-php-mvc-crud/?pagina=admin&metodo=index"</script>';
 			}
 			
 		}
